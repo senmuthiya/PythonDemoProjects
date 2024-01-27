@@ -2,7 +2,7 @@ from PIL import Image
 import pytesseract
 
 # Set the path to the Tesseract executable (change this path based on your installation)
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\SensClass\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 def extract_text_from_image(image_path):
     try:
@@ -18,7 +18,7 @@ def extract_text_from_image(image_path):
         print(f"Error during text extraction: {e}")
         return None
 
-# Replace 'your_image.png' with the path to your .png file
+# Replace 'Test_image.png' with the path to your .png file
 image_path = 'Test_image.png'
 
 # Call the function and handle the result
